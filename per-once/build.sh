@@ -10,4 +10,5 @@ sudo mkdir /etc/idrop-web
 sudo mkdir /etc/tomcat6
 sudo cp ./server.xml /etc/tomcat6
 sudo cp ./idrop-web-config2.groovy /etc/idrop-web
-sudo cp ./idrop-web2.war /var/lib/tomcat6/webapps
+sudo cp ./idrop-web2.war /var/lib/tomcat6/webapps/ROOT.war
+sudo rm -rf /var/lib/tomcat6/webapps/ROOT
