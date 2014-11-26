@@ -13,7 +13,8 @@ Use the following process to bootstrap the AWS image.
 sudo apt-get -y install git
 cd /home/ubuntu
 git clone https://github.com/beppodb/irods-aws
-irods-aws/deploy.sh
+cd /home/ubuntu/irods-aws 
+./deploy.sh
 sudo shred -u /etc/ssh/*_key /etc/ssh/*_key.pub
 sudo shred -u /home/ubuntu/.ssh/authorized_keys
 sudo shred -u /home/ubuntu/.*history
