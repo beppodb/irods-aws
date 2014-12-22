@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# 51-setupdb.sh
+# Sets up a Postgres database for iRODS by creating a database and user and granting
+# privileges to the user.
+
 RESPFILE="/home/ubuntu/setup_responses"
 DBUSER=`tail -n 3 $RESPFILE | head -n 1`
 DBPASS=`tail -n 2 $RESPFILE | head -n 1`

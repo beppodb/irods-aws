@@ -1,0 +1,30 @@
+This instance has irods-aws installed.
+
+irods-aws is a reference installation of iRODS and iDrop Web 2 on
+Amazon's Elastic Compute Cloud (EC2).
+
+The source files for irods-aws are located at
+https://github.com/beppodb/irods-aws
+
+The default iRODS installation's zone is named "tempZone".
+It has a single resource named "demoResc".
+It has a single user, the iRODS administrator, "rods".
+
+The password for rods is randomly generated. You will probably want
+to change this password.
+
+To change the iRODS password, use the following commands:
+  sudo su - irods
+  iadmin moduser rods password <new password>
+  iinit
+
+To change the name of the default zone, use the following command:
+  iadmin modzone tempZone name <new zonename>
+
+When changing the zone name, you will also need to modify the
+default zone name in:
+  /var/lib/irods/.irods/.irodsEnv
+  /etc/idrop-web/idrop-web-config.groovy
+
+
+

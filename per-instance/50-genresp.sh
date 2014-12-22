@@ -1,5 +1,10 @@
 #!/bin/bash
-RESPFILE="/home/ubuntu/setup_responses"
+
+# 50-genresp.sh
+# Generates responses for iRODS' setup_irods.sh script.
+# Zone SID, agent key, database admin, and admin password are all randomized.
+
+RESPFILE="/opt/irods-aws/setup_responses"
 
 echo "irods" > $RESPFILE                 # service account user ID
 echo "irods" >> $RESPFILE                # service account password
