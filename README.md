@@ -18,7 +18,7 @@ sudo apt-get -y install git
 cd /opt
 git clone https://github.com/beppodb/irods-aws
 cd /opt/irods-aws
-./deploy.sh
+./deploy.sh [iRODS version] [Postgres plugin version]
 sudo shred -u /etc/ssh/*_key /etc/ssh/*_key.pub
 sudo shred -u /home/ubuntu/.ssh/authorized_keys
 sudo shred -u /home/ubuntu/.*history

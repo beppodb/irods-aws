@@ -25,6 +25,3 @@ When changing the zone name, you will also need to modify the
 default zone name in:
   /var/lib/irods/.irods/.irodsEnv
   /etc/idrop-web/idrop-web-config.groovy
-
-
-
