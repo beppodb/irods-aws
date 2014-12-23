@@ -29,3 +29,4 @@ sudo a2ensite ajp.apache
 # configure MOTD and cron
 sudo cp ./motd.tail /etc
 sudo cp ./*.cron /etc/cron.d
+./deploy_s3_plugin_1.1.sh
