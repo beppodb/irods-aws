@@ -37,3 +37,4 @@ The iRODS S3 resource plugin is also installed. To configure it:
      S3_AUTH_FILE=</full/path/to/AWS.keypair>
    iadmin addchildtoresc compResc cacheResc cache
    iadmin addchildtoresc compResc archiveResc archive
+

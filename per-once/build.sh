@@ -31,5 +31,5 @@ sudo a2ensite ajp.apache
 sudo service apache2 restart
 # configure MOTD and cron
 sudo cp ./motd.tail /etc
-sudo cp ./*.cron /etc/cron.d
+sudo cp ./*_cron /etc/cron.d
 ./deploy_s3_plugin_1_1.sh
