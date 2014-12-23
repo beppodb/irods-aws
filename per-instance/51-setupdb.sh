@@ -4,7 +4,7 @@
 # Sets up a Postgres database for iRODS by creating a database and user and granting
 # privileges to the user.
 
-RESPFILE="/home/ubuntu/setup_responses"
+RESPFILE="/opt/irods-aws/setup_responses"
 DBUSER=`tail -n 3 $RESPFILE | head -n 1`
 DBPASS=`tail -n 2 $RESPFILE | head -n 1`
 
