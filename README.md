@@ -7,18 +7,20 @@ Image.
 This is meant to be installed on an Ubuntu 12.04 Amazon Machine Image.
 To find an appropriate target, see http://cloud-images.ubuntu.com/locator/ec2/
 
-Use the following process to bootstrap the AWS image. The process:
+Use the following process to bootstrap the AWS image by copying it into 
+user-data. The process:
 * installs git,
 * clones this repository,
 * downloads and installs iRODS and iDrop Web 2, and their dependencies,
 * installs a cron job to update the iDrop Web 2 config on hostname changes.
 
 ```bash
+#!/bin/bash
 sudo apt-get -y install git
 cd /opt
 sudo git clone https://github.com/beppodb/irods-aws
 cd /opt/irods-aws
-./deploy.sh [iRODS version] [Postgres plugin version]
+./deploy.sh 4.0.3 1.4
 sudo shred -u /etc/ssh/*_key /etc/ssh/*_key.pub
 sudo shred -u /home/ubuntu/.ssh/authorized_keys
 sudo shred -u /home/ubuntu/.*history
