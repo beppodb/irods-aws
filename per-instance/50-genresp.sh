@@ -18,11 +18,11 @@ echo "/var/lib/irods/Vault" >> $RESPFILE # vault path
  | tr -d '\n' ; echo "-SID") >> $RESPFILE # zone SID
 openssl rand -base64 32 | sed 's,/,S,g' | cut -c 1-32 >> $RESPFILE # agent key
 echo "rods" >> $RESPFILE                  # iRODS admin account
-echo $EC2_INSTANCE_ID >> $ RESPFILE       # iRODS admin password
+echo $EC2_INSTANCE_ID >> $RESPFILE       # iRODS admin password
 echo "yes" >> $RESPFILE                   # confirm iRODS settings
 echo "localhost" >> $RESPFILE             # database hostname
 echo "5432" >> $RESPFILE                  # database port
 echo "ICAT" >> $RESPFILE                  # database DB name
 echo "irods" >> $RESPFILE                 # database admin username
-echo $EC2_INSTANCE_ID >> $ RESPFILE       # database admin password
+echo $EC2_INSTANCE_ID >> $RESPFILE       # database admin password
 echo "yes" >> $RESPFILE                   # confirm database settings
