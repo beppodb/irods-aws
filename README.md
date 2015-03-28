@@ -20,7 +20,7 @@ sudo apt-get -y install git
 cd /opt
 sudo git clone https://github.com/beppodb/irods-aws
 cd /opt/irods-aws
-./deploy.sh 4.0.3 1.4
+./deploy.sh 4.0.3 4.0.3 4.0.3-with-v1.4-database-plugins 1.4
 sudo shred -u /etc/ssh/*_key /etc/ssh/*_key.pub
 sudo shred -u /home/ubuntu/.ssh/authorized_keys
 sudo shred -u /home/ubuntu/.*history
